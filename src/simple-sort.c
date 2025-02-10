@@ -1,3 +1,6 @@
-//
-// Created by Jan on 10.02.2025.
-//
+#include <stdio.h>
+
+int main() {
+
+    return 0;
+}
