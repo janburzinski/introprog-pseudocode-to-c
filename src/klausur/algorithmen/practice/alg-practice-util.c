@@ -38,3 +38,10 @@ void test_arr(void (*sorting_func)(int *, int), int *arr, int arr_size, const ch
         printf("[%s] ;((((( Array ist nicht erfolgreich sortiert!\n", alg_name);
     }
 }
+
+void swap(int *arr, int pos, int pos_2)
+{
+    int temp = arr[pos];
+    arr[pos] = arr[pos2];
+    arr[pos2] = temp;
+}

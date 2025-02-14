@@ -7,5 +7,6 @@
 bool is_sorted(int *arr, int arr_size);
 void print_array(int *arr, int arr_size);
 void test_arr(void (*sorting_func)(int *, int), int *arr, int arr_size, const char *alg_name);
+void swap(int *arr, int pos, int pos_2);
 
 #endif
