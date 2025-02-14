@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "stdio.h": "c",
+    "stdbool.h": "c",
+    "alg-practice-util.h": "c"
+  }
+}

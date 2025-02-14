@@ -5,6 +5,9 @@
  * - one with a swap function
  * - one without
  *
+ * Notizen:
+ *
+ * -
  */
 
 void swap(int *arr, int min, int j)
