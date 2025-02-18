@@ -1,4 +1,4 @@
-// gcc src/bubble-sort.c -o builds/bubble-sort.exe && ./builds/bubble-sort.exe
+// gcc src/klausur/algorithmen/bubble-sort.c -o builds/bubble-sort.exe && ./builds/bubble-sort.exe
 #include <stdio.h>
 
 void swap(int *arr, int i, int i_n)

@@ -13,9 +13,7 @@ bool is_sorted(int *arr, int arr_size)
 void print_array(int *arr, int arr_size)
 {
     for (int i = 0; i < arr_size; i++)
-    {
         printf("[%d] >> %d\n", i, arr[i]);
-    }
     printf("\n");
 }
 
@@ -42,6 +40,6 @@ void test_arr(void (*sorting_func)(int *, int), int *arr, int arr_size, const ch
 void swap(int *arr, int pos, int pos_2)
 {
     int temp = arr[pos];
-    arr[pos] = arr[pos2];
-    arr[pos2] = temp;
+    arr[pos] = arr[pos_2];
+    arr[pos_2] = temp;
 }

@@ -9,4 +9,4 @@ Eine zweite Loop (Innere Loop) läuft dann vom Anfang des Arrays bis zu j, bis s
 = > In dieser Loop vertauschen wir dann die Elemente und lassen sie nach unten „bubbeln“. Wir gucken also, ob die Zahl an arr[i] größer ist als arr[i+1].
 o Wenn die Zahl bei arr[i] also größer ist, dann tauschen wir die Zahlen und gehen weiter bis i < j.
 
-![Bubble Sort Algorithm](./îmgs/bubblesort.png)
+![Bubble Sort Algorithm](./imgs/bubblesort.png)

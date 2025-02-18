@@ -6,4 +6,4 @@
   Wir gucken, ob die Zahl bei arr[i], was ja die Zahl bei j+1 ist, kleiner ist als die Zahl bei arr[min] (was ja j ist) ist.
 - Wenn ja: Dann ist die neue kleinste Zahl arr[i] und wir updaten int min
   Nach der inneren Loop tauschen wir die Elemente bei arr[min] und arr[j]
-  ![alt text](./îmgs/selectionsort.png)
+  ![alt text](./imgs/selectionsort.png)

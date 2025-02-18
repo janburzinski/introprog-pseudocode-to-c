@@ -2,14 +2,17 @@
 
 [Bubble Sort Algorithm](bubblesort.md)
 [Selection Sort Algorithm](selectionsort.md)
+[Quick Sort Algorithm](quicksort.md)
+[Heap Sort Algorithm](heapsort.md)
+[Merge Sort Algorithm](mergesort.md)
 
 # Verwendete Datenstrukturen
 
 # ALGORITHMUS - TODO / Noch zu lernen
 
 [ ] Heapsort
-[ ] Mergesort (Rekursiv und Iterativ)
-[ ] Quicksort (Zufälliger Pivot, Median als Pivot, Letztes Element als Pivot)
+[ ] Mergesort (Möglichkeiten: _Rekursiv_ und Iterativ)
+[ ] Quicksort (Möglichkeiten: Zufälliger Pivot, Median als Pivot, _Letztes Element als Pivot_)
 [ ] Countsort
 [ ] Radixsort
 
