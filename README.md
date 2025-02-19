@@ -4,6 +4,6 @@ SRC_FILE: der name der datei
 
 gcc src/SRC_FILE -o builds/SRC_FILE.exe && ./builds/SRC_FILE.exe
 
-# Algorithms
+# Algorithmen und Datenstrukturen
 
-[Algorithms](src/klausur/README.md)
+[Algorithmen / Datenstrukturen](src/klausur/README.md)

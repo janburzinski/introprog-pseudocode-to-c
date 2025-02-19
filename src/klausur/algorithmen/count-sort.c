@@ -7,6 +7,7 @@
 void count_sort(int *arr_in, int *arr_out, int arr_len)
 {
   // größte vorkommende zahl ermitteln
+  // diese zahl brauchen wir, damit wir genug speicher für jede vorkommende zahl allokieren können
   int max = arr_in[0];
   for (int i = 1; i < arr_len; i++)
   {

@@ -1,5 +1,13 @@
 # Bubblesort: Sortieren durch vertauschen bis zum Ende
 
+#### Best-Case: O(n^2)
+
+#### Worst-Case: O(n^2)
+
+#### Average-Case: O(n^2)
+
+#### Stabil: Ja
+
 (Äußere Loop) Wir starten beim letzten Element im Array und lassen die loop laufen bis zum ersten Element (j > 0) [ j-- => um immer weiter nach vorne zu gehen ]
 o Die Loop läuft also genau bis arr_size – 1
 = > Loop verkleinert den Bereich in dem noch sortiert werden muss

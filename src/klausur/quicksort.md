@@ -1,5 +1,13 @@
 # Quicksort: (Divide and Conquer)
 
+#### Best-Case: O(n log n)
+
+#### Worst-Case: O(n^2)
+
+#### Average-Case: O(n log n)
+
+#### Stabil: Ja (kann abhängig vom gewählten Pivot sein)
+
 - Wir teilen den Array in immer kleiner werdene Teile auf und fügen ihn dann sortiert langsam wieder zusammen
   o Dies erzielen wir, durch Partitioning.
 - Partitioning: Wir wählen einen Pivot (z.B. das letzte Element des Arrays) und müssen sicherstellen, dass die Elemente links von diesem Element kleiner und rechte größer sind.

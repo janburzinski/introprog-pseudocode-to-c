@@ -1,9 +1,17 @@
 #include <stdio.h>
 
 /**
- * Notizen:
  *
- * -
+ * Insertion Sort:
+ * Wir überspringen das erste Element und überprüfen dann einfach,
+ * ob das Element an pos arr[i] größer als key ist (zwischengespeicherter wert von arr[j])
+ * i ist hierbei immer das linke Element von arr[j] (j-1)
+ *
+ * Falls das Element bei arr[i] größer als key ist, dann tauschen wir es und dekrementieren i,
+ * da wir immer nur das linke Element vergleichen wollen.
+ *
+ * Nach der while Loop setzen wir dann noch das Element key (arr[j]) an seine richtige Position
+ *
  */
 
 int main()

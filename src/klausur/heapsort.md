@@ -1,5 +1,13 @@
 # Heapsort: (Divide and Conquer)
 
+#### Best-Case: O(n log n)
+
+#### Worst-Case: O(n log n)
+
+#### Average-Case: O(n log n)
+
+#### Stabil: Nein
+
 - Wird als vollständiger Binärbaum präsentiert
 - Build_max_heap stellt sicher, dass der Binärbaum richtig präsentiert ist (linke Hälfte: 2*i+1 / rechte Hälfte: 2*i+2)
   o Für die Erstellung verwendet wir i = arr_size / 2 - 1; i >= 0; i--
