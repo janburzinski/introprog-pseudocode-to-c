@@ -3,18 +3,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct Node
+{
+  int value;
+  struct Node *next;
+} Node;
+
 /**
  * Linked List
  */
 
-void print_from_back()
-{
-  // aufgabe: alle elemente von hinten ausgeben
-}
-
 void insert_into_array()
 {
-  // aufgabe: neues element am anfang, am ende, an bestimmte position
+  Node *arr = (Node *)malloc(sizeof(Node));
+  if (arr == NULL)
+    return;
+
+  arr->value = 1;
+  arr->next = NULL;
 }
 
 void delete_from_array()
@@ -40,6 +46,13 @@ void combine_two_arrays()
 /**
  * Double Linked List
  */
+
+typedef struct
+{
+  int value;
+  struct DoubleNode *previos;
+  struct DoubleNode *next;
+} DoubleNode;
 
 void print_from_back_double_array()
 {
@@ -73,7 +86,9 @@ void combine_two_double_arrays()
 
 int main()
 {
-  print_from_back();
+  int arr[] = {4, 3, 2, 1, 533, 53};
+  int arr_size = sizeof(arr) / sizeof(arr[0]);
+
   insert_into_array();
   delete_from_array();
   search_array();

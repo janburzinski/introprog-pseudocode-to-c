@@ -1,3 +1,5 @@
+// gcc src/klausur/algorithmen/radix-sort.c -o builds/radix-sort.exe && ./builds/radix-sort.exe
+
 #include <stdio.h>
 #include <stdlib.h>
 
