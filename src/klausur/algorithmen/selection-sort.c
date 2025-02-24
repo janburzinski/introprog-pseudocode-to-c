@@ -1,13 +1,17 @@
 #include <stdio.h>
 
 /**
- * there are two forms of selection sort
+ *
+ *  there are two forms of selection sort
  * - one with a swap function
  * - one without
  *
- * Notizen:
+ * => keine ahnung warum ich das erwähnt habe bzw. warum das so in den folien der vorlesung stand
+ *    macht garkein sinn, weil es theoretisch exakt das gleiche ist, nur, dass man bei der ohne swap funktion
+ *    den code aus der swap funktion einfach theoretisch reinkopiert und dann das gleiche hat.
+ *    macht also meiner meinung nach nichts so viel sinn
+ *    LG
  *
- * -
  */
 
 void swap(int *arr, int min, int j)
@@ -15,6 +19,21 @@ void swap(int *arr, int min, int j)
   int h = arr[min];
   arr[min] = arr[j];
   arr[j] = h;
+}
+
+// i just wanted to make it more instantly visible what the algorithm does when i go to the file
+void selectionsort(int *arr, int arr_size)
+{
+  for (int j = 0; j < arr_size - 1; j++)
+  {
+    int min = j;
+    for (int i = j + 1; i < arr_size; i++)
+    {
+      if (arr[i] < arr[min])
+        min = i;
+    }
+    swap(arr, min, j);
+  }
 }
 
 int main()
