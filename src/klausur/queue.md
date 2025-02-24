@@ -17,8 +17,16 @@ typedef struct {<br/>
 
 ##### Enqueue (Insert)
 
+Time complexity: O(1)
+
 - Einfügen von Elementen an das Ende der Queue
 
 ##### Dequeue (Delete)
 
+Time complexity: O(1)
+
 - Entfernt das erste Item in der Queue
+
+#### Contains/Removal
+
+Time complexity: O(n)

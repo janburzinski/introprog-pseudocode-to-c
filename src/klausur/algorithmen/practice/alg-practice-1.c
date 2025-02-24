@@ -154,19 +154,64 @@ void insertion_sort(int *arr, int arr_size)
   }
 }
 
-void merge(int *arr, int left_idx, int middle_idx, int right_idx)
+void countsort(int *arr, int *arr_out, int arr_size)
 {
-}
-
-void mergesort(int *arr, int left_idx, int right_idx)
-{
-  if (left_idx < right_idx)
+  printf("miau\n");
+  int max = arr[0];
+  for (int i = 1; i < arr_size; i++)
   {
+    if (arr[i] > max)
+      max = arr[i];
   }
+  printf("countsort beginnt %d\n", max);
+
+  int *count = (int *)calloc((max + 1), sizeof(int));
+  if (count == NULL)
+    return;
+
+  // zahlen zählen
+  for (int i = 0; i < arr_size; i++)
+  {
+    count[arr[i]]++;
+  }
+
+  // array rekonstruieren
+  int arr_idx = 0;
+  for (int k = 0; k <= max; k++)
+  {
+    printf("[%d] %d\n", k, count[k]);
+    while (count[k] > 0)
+    {
+      arr_out[arr_idx++] = k;
+      count[k]--;
+    }
+  }
+
+  free(count);
 }
 
-void do_mergesort()
+void test_countsort()
 {
+  printf("countsort:\n");
+  int arr1[] = {64, 64, 11, 34, 25, 12, 22, 11, 90};
+  int arr1_size = sizeof(arr1) / sizeof(arr1[0]);
+  int *arr1_out = (int *)malloc(arr1_size * sizeof(int));
+
+  printf("davor: \n");
+  for (int i = 0; i < arr1_size; i++)
+  {
+    printf("[%d] %d\n", i, arr1[i]);
+  }
+  printf("\n");
+
+  countsort(arr1, arr1_out, arr1_size);
+
+  printf("danach: \n");
+  for (int i = 0; i < arr1_size; i++)
+  {
+    printf("[%d] %d\n", i, arr1_out[i]);
+  }
+  printf("\n");
 }
 
 void test_selection_sort()
@@ -273,6 +318,7 @@ int main()
   test_selection_sort();
   test_heap_sort();
   test_insertion_sort();
+  test_countsort();
 
   return 0;
 }

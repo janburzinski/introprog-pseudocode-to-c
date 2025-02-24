@@ -103,6 +103,26 @@ void quicksort(int *arr, int start, int end)
     quicksort(arr, pivot + 1, end);   // rechts
 }
 
+void countsort(int *arr, int *arr_out, int arr_size)
+{
+    int max = arr[0];
+    for (int i = 1; i < arr_size; i++)
+    {
+        if (arr[i] > max)
+            max = arr[i];
+    }
+
+    // variable zum zählen im speicher schonmal anlegen, mit genug speicher (größte zahl z.B. 100 => Speicher: 101 * sizeof(int))
+    int *count = (int *)calloc(max + 1, sizeof(int));
+    if (count == NULL)
+        return;
+
+    // vorkommnisse einer zahl zählen
+    // hierbei erhöhen wir wir den wert für count bei arr[i] um 1
+    for (int i = 0; i < arr_size; i++)
+        count[arr[i]]++;
+}
+
 int main()
 {
 

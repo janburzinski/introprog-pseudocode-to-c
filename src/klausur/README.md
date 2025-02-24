@@ -7,6 +7,7 @@
 [Merge Sort Algorithm](mergesort.md)<br/>
 [Count Sort Algorithm](countsort.md)<br/>
 [Insertion Sort Algorithm](insertionsort.md)<br/>
+[Binary Search](binarysearch.md)<br/>
 
 # Verwendete Datenstrukturen
 

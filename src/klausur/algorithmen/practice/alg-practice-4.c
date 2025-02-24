@@ -5,6 +5,26 @@
 #include <stdbool.h>
 #include "alg-practice-util.h"
 
+void partition(int *arr, int start, int end)
+{
+}
+
+void quicksort(int *arr, int start, int end)
+{
+}
+
+void build_max_heap(int *arr, int arr_size)
+{
+}
+
+void heapify(int *arr, int arr_size, int i)
+{
+}
+
+void heapsort(int *arr, int arr_size)
+{
+}
+
 int main()
 {
   return 0;
